@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+
+    <main>
+        <form id="newsletter">
+            <div>
+                <label for="name">Nome</label>
+                <br>
+                <input type="text" name="nome" id="name" placeholder="Digite seu Nome aqui..." required>
+                <br>
+            </div>
+            <div>
+                <label for="e-mail">E-mail</label>
+                <br>
+                <input type="text" name="email" id="e-mail" placeholder="Digite seu e-mail aqui..." required>
+                <br>
+            </div>
+            <div>
+                <label for="descricao">Descrição</label>
+                <br>
+                <textarea name="descricao" id="descricao" cols="30" rows="5" placeholder="Fale mais sobre você aqui..."
+                    required></textarea>
+                <br>
+            </div>
+            <div>
+                <label for="modulo">Módulo</label>
+                <br>
+                <select name="modulo" id="modulo" required>
+                    <option value="">Escolher Módulo</option>
+                    <option value="modulo1">Módulo 1</option>
+                    <option value="modulo2">Módulo 2</option>
+                    <option value="modulo3">Módulo 3</option>
+                    <option value="modulo4">Módulo 4</option>
+                    <option value="modulo5">Módulo 5</option>
+                    <option value="modulo6">Módulo 6</option>
+                </select>
+            </div>
+            <div>
+                <label for="senha">Senha</label>
+                <br>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha aqui..." required>
+                <br>
+            </div>
+            <div>
+                <label for="senhaconfirmar">Confirme sua senha</label>
+                <br>
+                <input type="password" name="senhaconfirmar" id="senhaconfirmar"
+                    placeholder="Digite sua senha novamente aqui..." required>
+                <br>
+            </div>
+            <div>
+                <p>Deseja receber novidades em seu e-mail?</p>
+                <label for="sim">Sim</label>
+                <input type="radio" name="receberemail" id="receberemail-sim" value="sim">
+                <label for="nao">Não</label>
+                <input type="radio" name="receberemail" id="receberemail-nao" value="nao">
+            </div>
+            <button type="submit" id="send">Cadastrar</button>
+        </form>
+    </main>
+
+</body>
+
+</html>
